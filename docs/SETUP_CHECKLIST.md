@@ -78,7 +78,7 @@ npm run dev
 
 ### Step 4: Webhook Configuration (Production)
 
-Once deployed to Vercel (or when using ngrok for local testing):
+Once deployed to Vercel (or when using Cloudflare Tunnel for local testing):
 
 1. **Callback URL**: `https://your-domain.vercel.app/api/webhooks/whatsapp`
 2. **Verify token**: Value of `WHATSAPP_VERIFY_TOKEN` from `.env.local`.

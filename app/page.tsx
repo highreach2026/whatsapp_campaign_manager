@@ -219,9 +219,9 @@ export default function Home() {
           <div className="panelTitle"><span>04</span><h3>Send approved template</h3></div>
           <form onSubmit={sendCampaign} className="stack">
             <label>Campaign name<input name="campaignName" defaultValue="High Reach Services Lead Campaign" required /></label>
-            <label>Approved Meta template name<input name="templateName" defaultValue="high_reach_services_intro" placeholder="high_reach_services_intro" required /></label>
+            <label>Approved Meta template name<input name="templateName" placeholder="high_reach_services_intro" required /></label>
             <label>Language code<input name="languageCode" defaultValue="en" required /></label>
-            <label>Body variable fields<input name="bodyVariableFields" defaultValue="" placeholder="Optional: e.g. name,company" /><small>Leave completely empty if your template has no {"{{1}}"} placeholders.</small></label>
+            <label>Body variable fields<input name="bodyVariableFields" defaultValue="name,company" /><small>Comma-separated positional variables, matching template {"{{1}}"}, {"{{2}}"} etc.</small></label>
             <div className="sendSummary">
               <div><span>Recipients</span><b>{selected.length}</b></div>
               <div><span>Header media</span><b>{mediaId ? headerType : "None"}</b></div>
